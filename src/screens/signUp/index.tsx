@@ -8,10 +8,11 @@ import { FocusAwareStatusBar } from '@/ui';
 import type { LoginFormProps } from './sign-up-form';
 import { SignUpForm } from './sign-up-form';
 
-export const Login = () => {
+export const SignUp = () => {
   // const signUp = useAuth.use.signUp();
   useSoftKeyboardEffect();
-  const { mutate: addUser, isLoading } = createUser();
+  const { mutate: addUser } = createUser();
+  // Add in isLoading state from createUser
 
   const onSubmit: LoginFormProps['onSubmit'] = async (data) => {
     // signIn({ access: 'access-token', refresh: 'refresh-token' });
