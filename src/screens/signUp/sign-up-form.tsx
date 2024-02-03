@@ -54,8 +54,8 @@ export const SignUpForm = ({ onSubmit = () => {} }: LoginFormProps) => {
           secureTextEntry={true}
         />
         <Button
-          testID="login-button"
-          label="Login"
+          testID="sign-up-button"
+          label="Sign Up"
           onPress={handleSubmit(onSubmit)}
           variant="primary"
         />
